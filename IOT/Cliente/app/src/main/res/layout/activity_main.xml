@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nodo IoT - Emisor (Tablet)"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/etIpServidor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="IP del Servidor (Teléfono)"
+        android:inputType="text"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etTemperatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Temperatura (Ej: 24.5)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etPuerta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Estado Puerta (Ej: Abierta)"
+        android:inputType="text"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar Trama al Servidor"/>
+
+    <TextView
+        android:id="@+id/tvEstadoEnvio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esperando envío..."
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"/>
+
+</LinearLayout>
